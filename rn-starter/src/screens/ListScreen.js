@@ -16,7 +16,7 @@ const ListScreen = () => {
     const friends = [
         {name: 'Dustin', Age: '23'},
         {name: 'Sherry', Age: '22'},
-        {name: 'Amber', Age: '20'},
+        {name: 'Amber', Age: '22'},
         {name: 'Razor',Age: '26'},
         {name: 'QiQi', Age: '1000'},
         {name: 'Keen', Age: '29'},
@@ -30,7 +30,7 @@ const ListScreen = () => {
             showsHorizontalScrollIndicator = {false}
 
         //Using keyExtractor to solve keys problem
-            keyExtractor={friend => friend.name}
+            keyExtractor={dude => dude.name}
             data={friends}
             renderItem={({ item }) => {
                 return <Text style={styles.textStyle}>Name: {item.name} - Age: {item.Age}</Text>
